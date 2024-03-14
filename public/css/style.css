@@ -1,0 +1,158 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /* border: 3px solid red; */
+}
+
+main {
+    min-height: 100vh;
+    width: 100%;
+    overflow: auto;
+}
+
+li {
+    list-style: none;
+}
+
+
+.card-list {
+  text-align: center;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(25%, 1fr));
+  gap: 10px;
+  background-color: #ccc;
+}
+
+.card-item {
+  border: 2px solid #7d3e12;
+  padding: 20px;
+  border-radius: 5px;
+}
+
+.card-item img {
+  max-width: 80%;
+  height: auto;
+}
+
+.card-area {
+  margin-top: 30px;
+  margin-bottom: 10px;
+  min-height: 480px;
+}
+
+.column1 {
+  float: left;
+  width: 30%;
+  padding: 50px;
+}
+
+.column2 {
+  float: left;
+  width: 70%;
+  padding: 10px;
+  margin-top: 4%;
+}
+
+@media screen and (max-width: 1200px) {
+  .column1,
+  .column2 {
+    width: 100%;
+  }
+
+  .card-image {
+    text-align: center;
+  }
+}
+
+.card-image img {
+  max-width: 444px;
+  width: 100%;
+  border-radius: 15px;
+  min-height: 456.48px;
+  min-width: 313px;
+  height: 100%;
+}
+
+.card-typing-icon {
+  height: 20px;
+  width: 20px;
+  vertical-align: sub;
+}
+
+.format-row-grid {
+  padding-left: 0;
+  display: grid;
+  max-width: 950px;
+  grid-template: repeat(5, 1fr) / repeat(6, 1fr);
+  grid-template-rows: min-content 1fr;
+  grid-gap: 10px;
+  grid-auto-flow: row;
+  grid-template-columns: repeat(3, 1fr);
+  margin-top: 10px;
+  grid-template-columns: auto auto auto;
+  justify-content: center;
+}
+
+.card-data-info {
+  padding-left: 0;
+  display: grid;
+  max-width: 950px;
+  grid-template: repeat(5, 1fr) / repeat(6, 1fr);
+  grid-template-rows: min-content 1fr;
+  grid-gap: 10px;
+  grid-auto-flow: row;
+  grid-template-columns: repeat(3, 1fr);
+
+  @media screen and (max-width: 1200px) {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+.card-2 {
+  max-width: 40rem;
+  height: auto;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.card-body-2 img {
+  max-width: 50%;
+}
+
+ul.card-data-info li {
+  list-style: none;
+  min-width: 150px;
+  text-align: left;
+  background: #7d3e12;
+  padding: 5px;
+  display: block;
+  border-radius: 5px;
+  color: #fff;
+}
+
+.card-data-header {
+  font-size: 0.8em;
+}
+
+.card-data-cost {
+  margin-left: 0 !important;
+}
+
+.card-data-class {
+  margin-left: 0 !important;
+}
+
+.card-data-subheader {
+  display: block;
+}
+
+.card-data-subheader a {
+  color: unset;
+  text-decoration: none;
+
+  :hover {
+    text-decoration: underline;
+  }
+}
